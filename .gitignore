@@ -1,0 +1,18 @@
+# Secrets — never commit
+.env
+
+# Original assignment document — keep local only (user directive)
+druthi 1.docx
+
+# Dependencies and build artifacts
+node_modules/
+frontend/dist/
+backend/bin/
+*.exe
+*.test
+*.out
+coverage/
+
+# OS noise
+Thumbs.db
+.DS_Store

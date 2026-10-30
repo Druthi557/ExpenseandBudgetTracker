@@ -1,0 +1,16 @@
+Production server verification — 2026-10-30 ~10:15 IST
+Server started with the README command (cd backend && go run ./cmd/server), .env
+configuration, SPA auto-detected at ../frontend/dist. pebt_dev connected but never
+written to (only unauthenticated GETs, which the auth middleware rejects before any
+query). Server then stopped.
+
+1. Startup: no panic — "serving SPA from ../frontend/dist", "listening on :8080"
+2. GET /                              -> 200 (text/html; charset=utf-8)   [SPA root]
+3. GET /assets/index-CsSzApos.css     -> 200 (text/css; charset=utf-8)    [static asset]
+4. GET /budgets                       -> 200                              [client-route fallback -> index.html]
+5. GET /api/v1/categories (no auth)   -> 401                              [valid API route; auth enforced]
+6. GET /api/v1/nope                   -> 404 (application/json)
+   body: {"error":{"code":"NOT_FOUND","message":"Unknown API route"}}     [envelope, NOT SPA]
+7. STATIC_DIR=./definitely-missing-dir go run ./cmd/server ->
+   "configuration: STATIC_DIR "./definitely-missing-dir" does not exist (set it to the
+   built-frontend directory, or unset it to disable SPA serving)" — exit status 1

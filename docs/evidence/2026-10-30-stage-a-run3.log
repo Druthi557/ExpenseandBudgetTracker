@@ -1,0 +1,72 @@
+=== RUN   TestTC_A01_Register
+--- PASS: TestTC_A01_Register (0.39s)
+=== RUN   TestTC_A02_DuplicateEmail
+--- PASS: TestTC_A02_DuplicateEmail (0.62s)
+=== RUN   TestTC_A04_Login
+--- PASS: TestTC_A04_Login (0.41s)
+=== RUN   TestTC_A03_Logout
+--- PASS: TestTC_A03_Logout (0.21s)
+=== RUN   TestTC_A31_RegisterValidation
+--- PASS: TestTC_A31_RegisterValidation (0.00s)
+=== RUN   TestTC_A32_LoginInvalid
+--- PASS: TestTC_A32_LoginInvalid (0.21s)
+=== RUN   TestTC_A30_TokenStates
+--- PASS: TestTC_A30_TokenStates (0.21s)
+=== RUN   TestTC_A35_CSRF
+--- PASS: TestTC_A35_CSRF (0.38s)
+=== RUN   TestTC_A25_BcryptStorage
+--- PASS: TestTC_A25_BcryptStorage (0.40s)
+=== RUN   TestTC_A18_BudgetCRUD
+--- PASS: TestTC_A18_BudgetCRUD (0.38s)
+=== RUN   TestTC_A19_BudgetAmountValidation
+--- PASS: TestTC_A19_BudgetAmountValidation (0.35s)
+=== RUN   TestTC_A10_BudgetIncomeCategory
+--- PASS: TestTC_A10_BudgetIncomeCategory (0.49s)
+=== RUN   TestTC_A11_BudgetDuplicate
+--- PASS: TestTC_A11_BudgetDuplicate (0.34s)
+=== RUN   TestTC_A12_BudgetMonthCalculation
+--- PASS: TestTC_A12_BudgetMonthCalculation (0.32s)
+=== RUN   TestTC_A20_OverBudget
+--- PASS: TestTC_A20_OverBudget (0.37s)
+=== RUN   TestTC_A13_CategoryCRUD
+--- PASS: TestTC_A13_CategoryCRUD (0.36s)
+=== RUN   TestTC_A26_CategoryDuplicate
+--- PASS: TestTC_A26_CategoryDuplicate (0.36s)
+=== RUN   TestTC_A27_CategoryTypeFilter
+--- PASS: TestTC_A27_CategoryTypeFilter (0.36s)
+=== RUN   TestTC_A06_CategoryInUse
+--- PASS: TestTC_A06_CategoryInUse (0.36s)
+=== RUN   TestTC_A29_ErrorEnvelope
+--- PASS: TestTC_A29_ErrorEnvelope (0.38s)
+=== RUN   TestTC_A24_Persistence
+--- PASS: TestTC_A24_Persistence (0.58s)
+=== RUN   TestTC_A05_CrossUserRead
+--- PASS: TestTC_A05_CrossUserRead (0.76s)
+=== RUN   TestTC_A17_CrossUserWriteDelete
+--- PASS: TestTC_A17_CrossUserWriteDelete (0.86s)
+=== RUN   TestTC_A33_ListIsolation
+--- PASS: TestTC_A33_ListIsolation (0.66s)
+=== RUN   TestTC_A23_DBConstraints
+--- PASS: TestTC_A23_DBConstraints (0.81s)
+=== RUN   TestTC_A22_MoneyExactness
+--- PASS: TestTC_A22_MoneyExactness (0.34s)
+=== RUN   TestTC_A21_Dashboard
+--- PASS: TestTC_A21_Dashboard (0.38s)
+=== RUN   TestTC_A34_EmptyDashboard
+--- PASS: TestTC_A34_EmptyDashboard (0.45s)
+=== RUN   TestTC_A15_TxCRUD
+--- PASS: TestTC_A15_TxCRUD (0.39s)
+=== RUN   TestTC_A16_TxUpdateValidation
+--- PASS: TestTC_A16_TxUpdateValidation (0.43s)
+=== RUN   TestTC_A07_AmountValidation
+--- PASS: TestTC_A07_AmountValidation (0.46s)
+=== RUN   TestTC_A08_DateValidation
+--- PASS: TestTC_A08_DateValidation (0.32s)
+=== RUN   TestTC_A09_TypeConflict
+--- PASS: TestTC_A09_TypeConflict (0.44s)
+=== RUN   TestTC_A14_ListOrderFilters
+--- PASS: TestTC_A14_ListOrderFilters (0.37s)
+=== RUN   TestTC_A28_FilterValidation
+--- PASS: TestTC_A28_FilterValidation (0.86s)
+PASS
+ok  	pebt/backend/tests	17.336s

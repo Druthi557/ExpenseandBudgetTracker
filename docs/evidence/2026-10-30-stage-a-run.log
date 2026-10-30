@@ -1,0 +1,111 @@
+=== RUN   TestTC_A01_Register
+--- PASS: TestTC_A01_Register (0.27s)
+=== RUN   TestTC_A02_DuplicateEmail
+--- PASS: TestTC_A02_DuplicateEmail (0.63s)
+=== RUN   TestTC_A04_Login
+--- PASS: TestTC_A04_Login (0.43s)
+=== RUN   TestTC_A03_Logout
+    auth_test.go:109: status = 404, want 204 (body: {"error":{"code":"NOT_FOUND","message":"Unknown API route"}}
+        )
+--- FAIL: TestTC_A03_Logout (0.21s)
+=== RUN   TestTC_A31_RegisterValidation
+--- PASS: TestTC_A31_RegisterValidation (0.00s)
+=== RUN   TestTC_A32_LoginInvalid
+--- PASS: TestTC_A32_LoginInvalid (0.27s)
+=== RUN   TestTC_A30_TokenStates
+--- PASS: TestTC_A30_TokenStates (0.36s)
+=== RUN   TestTC_A35_CSRF
+--- PASS: TestTC_A35_CSRF (0.39s)
+=== RUN   TestTC_A25_BcryptStorage
+    auth_test.go:235: query user: no rows in result set
+--- FAIL: TestTC_A25_BcryptStorage (0.30s)
+=== RUN   TestTC_A18_BudgetCRUD
+    budgets_test.go:13: status = 422, want 201 (body: {"error":{"code":"VALIDATION_ERROR","message":"Category is required"}}
+        )
+--- FAIL: TestTC_A18_BudgetCRUD (0.28s)
+=== RUN   TestTC_A19_BudgetAmountValidation
+--- PASS: TestTC_A19_BudgetAmountValidation (0.34s)
+=== RUN   TestTC_A10_BudgetIncomeCategory
+--- PASS: TestTC_A10_BudgetIncomeCategory (0.32s)
+=== RUN   TestTC_A11_BudgetDuplicate
+    budgets_test.go:68: status = 422, want 201 (body: {"error":{"code":"VALIDATION_ERROR","message":"Category is required"}}
+        )
+--- FAIL: TestTC_A11_BudgetDuplicate (0.31s)
+=== RUN   TestTC_A12_BudgetMonthCalculation
+    budgets_test.go:84: status = 422, want 201 (body: {"error":{"code":"VALIDATION_ERROR","message":"Category is required"}}
+        )
+--- FAIL: TestTC_A12_BudgetMonthCalculation (0.34s)
+=== RUN   TestTC_A20_OverBudget
+    budgets_test.go:127: status = 422, want 201 (body: {"error":{"code":"VALIDATION_ERROR","message":"Category is required"}}
+        )
+--- FAIL: TestTC_A20_OverBudget (0.42s)
+=== RUN   TestTC_A13_CategoryCRUD
+    categories_test.go:13: created category wrong: map[ID:8 Name:Groceries Type:EXPENSE UserID:17]
+--- FAIL: TestTC_A13_CategoryCRUD (0.30s)
+=== RUN   TestTC_A26_CategoryDuplicate
+--- PASS: TestTC_A26_CategoryDuplicate (0.46s)
+=== RUN   TestTC_A27_CategoryTypeFilter
+    categories_test.go:62: non-expense row in filtered list: map[ID:13 Name:Food Type:EXPENSE UserID:19]
+--- FAIL: TestTC_A27_CategoryTypeFilter (0.50s)
+=== RUN   TestTC_A06_CategoryInUse
+    categories_test.go:84: status = 422, want 201 (body: {"error":{"code":"VALIDATION_ERROR","message":"Category is required"}}
+        )
+--- FAIL: TestTC_A06_CategoryInUse (0.38s)
+=== RUN   TestTC_A29_ErrorEnvelope
+--- PASS: TestTC_A29_ErrorEnvelope (0.42s)
+=== RUN   TestTC_A24_Persistence
+    errors_test.go:75: status = 422, want 201 (body: {"error":{"code":"VALIDATION_ERROR","message":"Category is required"}}
+        )
+--- FAIL: TestTC_A24_Persistence (0.40s)
+=== RUN   TestTC_A05_CrossUserRead
+    isolation_test.go:19: status = 422, want 201 (body: {"error":{"code":"VALIDATION_ERROR","message":"Category is required"}}
+        )
+--- FAIL: TestTC_A05_CrossUserRead (0.67s)
+=== RUN   TestTC_A17_CrossUserWriteDelete
+    isolation_test.go:37: status = 422, want 201 (body: {"error":{"code":"VALIDATION_ERROR","message":"Category is required"}}
+        )
+--- FAIL: TestTC_A17_CrossUserWriteDelete (0.89s)
+=== RUN   TestTC_A33_ListIsolation
+    isolation_test.go:61: status = 422, want 201 (body: {"error":{"code":"VALIDATION_ERROR","message":"Category is required"}}
+        )
+--- FAIL: TestTC_A33_ListIsolation (0.73s)
+=== RUN   TestTC_A23_DBConstraints
+    isolation_test.go:130: status = 422, want 201 (body: {"error":{"code":"VALIDATION_ERROR","message":"Category is required"}}
+        )
+--- FAIL: TestTC_A23_DBConstraints (0.90s)
+=== RUN   TestTC_A22_MoneyExactness
+    money_dashboard_test.go:28: status = 422, want 201 (body: {"error":{"code":"VALIDATION_ERROR","message":"Category is required"}}
+        )
+--- FAIL: TestTC_A22_MoneyExactness (0.43s)
+=== RUN   TestTC_A21_Dashboard
+    money_dashboard_test.go:90: status = 422, want 201 (body: {"error":{"code":"VALIDATION_ERROR","message":"Category is required"}}
+        )
+--- FAIL: TestTC_A21_Dashboard (0.36s)
+=== RUN   TestTC_A34_EmptyDashboard
+--- PASS: TestTC_A34_EmptyDashboard (0.43s)
+=== RUN   TestTC_A15_TxCRUD
+    transactions_test.go:15: status = 422, want 201 (body: {"error":{"code":"VALIDATION_ERROR","message":"Category is required"}}
+        )
+--- FAIL: TestTC_A15_TxCRUD (0.44s)
+=== RUN   TestTC_A16_TxUpdateValidation
+    transactions_test.go:61: status = 422, want 201 (body: {"error":{"code":"VALIDATION_ERROR","message":"Category is required"}}
+        )
+--- FAIL: TestTC_A16_TxUpdateValidation (0.34s)
+=== RUN   TestTC_A07_AmountValidation
+--- PASS: TestTC_A07_AmountValidation (0.41s)
+=== RUN   TestTC_A08_DateValidation
+--- PASS: TestTC_A08_DateValidation (0.52s)
+=== RUN   TestTC_A09_TypeConflict
+    transactions_test.go:151: code = "VALIDATION_ERROR", want TYPE_CONFLICT
+--- FAIL: TestTC_A09_TypeConflict (0.49s)
+=== RUN   TestTC_A14_ListOrderFilters
+    transactions_test.go:165: status = 422, want 201 (body: {"error":{"code":"VALIDATION_ERROR","message":"Category is required"}}
+        )
+--- FAIL: TestTC_A14_ListOrderFilters (0.48s)
+=== RUN   TestTC_A28_FilterValidation
+    transactions_test.go:217: status = 422, want 404 (body: {"error":{"code":"VALIDATION_ERROR","message":"category_id must be a positive integer"}}
+        )
+--- FAIL: TestTC_A28_FilterValidation (0.77s)
+FAIL
+FAIL	pebt/backend/tests	18.037s
+FAIL

@@ -1,0 +1,10 @@
+2026/10/30 10:00:36 COOKIE_SECURE=false — non-Secure cookies, local development only
+2026/10/30 10:00:36 no built frontend found (frontend/dist) — API only; run the Vite dev server
+2026/10/30 10:00:37 listening on :8099
+2026/10/30 10:00:38 GET /api/v1/categories -> 401 (0s)
+2026/10/30 10:00:53 POST /api/v1/auth/register -> 201 (327ms)
+2026/10/30 10:00:53 POST /api/v1/categories -> 201 (10ms)
+2026/10/30 10:00:53 POST /api/v1/transactions -> 201 (16ms)
+2026/10/30 10:00:54 internal error: ERROR: unterminated dollar-quoted string at or near "$$2 ORDER BY t.tx_date DESC, t.id DESC" (SQLSTATE 42601)
+2026/10/30 10:00:54 GET /api/v1/transactions -> 500 (7ms)
+2026/10/30 10:00:54 GET /api/v1/transactions -> 200 (1ms)

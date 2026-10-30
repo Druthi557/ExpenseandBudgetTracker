@@ -1,0 +1,1157 @@
+# prompt.log — Personal Expense and Budget Tracker
+#
+# Append-only record of the user's prompts to Claude Code for this project.
+# Per project rules: sequential number; local timestamp including timezone; SDLC phase
+# when known; exact prompt text preserving original wording. Claude's responses are
+# deliberately NOT logged here (this file records user prompts only).
+#
+# Provenance and honest limitations (recorded 2026-10-29):
+# - All entries were recovered verbatim from Claude Code session transcripts on 2026-10-29
+#   (sessions 11078d54, 8704d35d, 189af17d, c5b8f3f4, 315305fa).
+# - Timestamps are message timestamps recorded in those transcripts (UTC), converted to
+#   local time Asia/Kolkata (UTC+05:30). They mark when the session processed the message,
+#   which may differ slightly from when it was typed — treat as approximate.
+# - Prompts were pasted into the session UI; storage wrapper markup ("pasted_content" tags)
+#   has been stripped. Wording inside is preserved exactly, including a filename written as
+#   "druthi 1(1).docx" in prompts #1–#3 — the actual file on disk is "druthi 1.docx".
+#   Original wording is kept as-is per the no-invention rule.
+# - No prompts for this project are known to exist before #1. Any earlier conversation
+#   outside the recovered transcripts is marked UNRECOVERABLE, not reconstructed.
+# - Redactions: none required — no passwords, tokens, or secrets appear in any prompt.
+# - Sessions 8704d35d (#8) and c5b8f3f4 (#12) failed with API usage-limit errors and
+#   produced NO response; the work they requested was later completed in session 315305fa.
+# - Capture method changed from #19 onward: prompts are appended by Claude during the
+#   session itself (the practice this header recommends), not recovered from transcripts.
+# - Status of work as of this file's creation: Phase 1 approved; Phase 2 drafted (v2.1),
+#   AWAITING USER APPROVAL; Phase 3 BLOCKED. No implementation, tests, or commits have
+#   occurred. Nothing here claims otherwise.
+
+---
+
+## Prompt #1
+- Timestamp: 2026-10-27 21:47:31 IST (approx., session metadata)
+- Phase: Phase 1 — Planning
+- Text:
+
+**Source-of-Truth Rule — Mandatory for the Entire Project**
+
+Use the assignment document (`druthi 1(1).docx`) as the **single ultimate source of truth** for this project.
+
+1. Read and refer to the assignment document before planning, designing, implementing, testing, or documenting anything.
+2. Every requirement, feature, technology choice, validation rule, acceptance criterion, and submission deliverable must be grounded in the assignment document.
+3. Do not introduce requirements, features, technologies, or deliverables that are not specified or reasonably necessary to satisfy the assignment.
+4. Do not replace, contradict, weaken, or silently reinterpret any assignment requirement based on your general knowledge, preferences, or assumptions.
+5. If a detail is unspecified, explicitly identify it as an open question or proposed implementation decision. Do not present it as an assignment requirement.
+6. If the document is unavailable or unreadable, stop and ask me to provide it. Do not reconstruct its requirements from memory or guess.
+7. Maintain traceability throughout the SDLC: map requirements from the assignment to the design, implementation, and test cases.
+8. If you identify a conflict or ambiguity in the assignment, explain it and ask for my approval before deciding how to proceed.
+
+**Current task: SDLC Phase 1 — Project Planning only.**
+
+Inspect the current working directory without modifying any files. Then prepare the project plan using only the assignment document as the requirements authority.
+
+Include project scope, required technologies, major milestones, risks, SDLC deliverables, and the definition of done, all traceable to the document.
+
+Do not create or edit files, install dependencies, write application code, run migrations, deploy, or push to GitHub.
+
+Stop after presenting the plan and wait for my explicit approval before proceeding to the next SDLC phase.
+
+---
+
+## Prompt #2
+- Timestamp: 2026-10-27 22:09:49 IST (approx., session metadata)
+- Phase: Phase 1 — Planning
+- Text:
+
+Resume the original task and continue the SDLC workflow from where you left off.
+
+**Update:** The assignment document, `druthi 1(1).docx`, is now present directly in the current project folder. Use this file as the authoritative source for the assignment requirements.
+
+### First: Resume the document inspection
+1. Check the current project folder and confirm that `druthi 1(1).docx` exists.
+2. Read and extract the document's actual contents. Do not rely on previous project memory, assumptions, or an incomplete summary in place of the document.
+3. If your previous Explore agent stopped or is no longer available, resume the inspection using an available method. Do not wait indefinitely for an agent that is no longer running.
+4. Confirm that you successfully read the document before proceeding with the plan. If you cannot read it, explain the specific issue and ask me for what you need.
+
+### Next: Continue SDLC Phase 1 — Planning
+Using the assignment document as the source of truth, prepare a planning report in the conversation covering:
+- Project objective and scope
+- Functional and non-functional requirements
+- Required technology stack and constraints
+- Main deliverables and milestones
+- High-level implementation approach
+- Risks, dependencies, and unresolved questions
+- A proposed SDLC phase sequence, with clear entry and exit criteria
+- Traceability between the proposed plan and the actual assignment requirements
+
+Clearly label confirmed requirements, reasonable proposals, and unresolved questions separately. Do not invent requirements or silently resolve ambiguities.
+
+### Strict project boundaries
+- This is a planning-only task.
+- Do not create, edit, delete, rename, or overwrite project files.
+- Do not write application code, tests, database migrations, or configuration files.
+- Do not install dependencies, run deployment commands, commit changes, or push to GitHub.
+- Do not treat unrelated project memories, previous assignments, or references such as TravelHelpDeskAgent or OPEN-001 as requirements unless the assignment document or my explicit instructions establish their relevance.
+- Present the plan in the conversation only, then stop and wait for my explicit approval before starting the next SDLC phase.
+
+**Important:** The assignment document takes precedence over assumptions and unrelated memory. Preserve its stated requirements and identify any gaps instead of filling them in yourself.
+
+---
+
+## Prompt #3
+- Timestamp: 2026-10-27 22:46:12 IST (approx., session metadata)
+- Phase: Phase 1 — Planning
+- Text:
+
+The assignment document is located in the following folder:
+
+`C:\Users\Druthi D\ExpenseandBudgetTracker`
+
+Please inspect this exact directory and locate `druthi 1.docx`. The assignment file is present in this folder.
+
+Please resume the original task from where you stopped:
+
+1. Read the actual assignment document and confirm that you successfully extracted its contents.
+2. Treat the assignment document as the ultimate source of truth. Do not use my resume, unrelated project memories, or assumptions as substitutes.
+3. Continue with **SDLC Phase 1 — Planning** and prepare the planning report as previously instructed, covering scope, requirements, technology stack, deliverables, milestones, risks, unresolved questions, the proposed SDLC sequence, and traceability to the assignment.
+4. Clearly distinguish confirmed requirements, proposals, and open questions.
+5. **Do not create, edit, delete, or overwrite any files. Do not write code, install dependencies, run migrations, commit, push, or deploy.**
+6. Present the completed plan in this conversation and wait for my explicit approval before proceeding to the next SDLC phase.
+
+If you cannot find or read the file at this exact location, report the specific issue and stop. Do not launch repeated broad searches or use a different document.
+
+First confirm the file's existence and successful reading, then continue the planning task.
+
+---
+
+## Prompt #4  — PHASE 1 APPROVAL
+- Timestamp: 2026-10-27 23:58:29 IST (approx., session metadata)
+- Phase: Phase 1 → Phase 2 gate
+- Text:
+
+I have reviewed the SDLC Phase 1 planning report and approve the overall plan, with the following clarifications:
+
+- Q1: No deadline is being set at this stage.
+- Q2: Propose INR (₹) as the display currency, subject to confirmation during design.
+- Q3: Propose showing the five most recent transactions overall on the dashboard.
+- Q4: Propose newest-first transaction ordering.
+- Q5: Propose a secure JWT authentication and logout strategy and explain its trade-offs during design.
+- Q6: Propose a reasonable password policy during design.
+- Q7: Propose starting new accounts with empty categories unless the assignment requires otherwise.
+- Q8: Include automated tests for critical APIs and acceptance criteria as a proposed quality measure.
+
+Now proceed to **SDLC Phase 2 — Requirements and Design only**.
+
+During Phase 2:
+1. Recheck the assignment requirements and preserve the assignment document as the source of truth.
+2. Prepare the database ERD/schema design, API endpoint contract, validation matrix, authentication design, and technology/version proposals.
+3. Identify decisions that require my approval and clearly distinguish confirmed requirements from proposals.
+4. Check that the design covers all functional requirements and acceptance criteria from the assignment.
+5. Do not create or modify files, write application code, install dependencies, run migrations, commit, push, or deploy.
+6. Present the complete Phase 2 design in this conversation and wait for my explicit approval before starting implementation.
+
+Do not treat approval of Phase 1 as approval to implement. Stop after presenting Phase 2 for review.
+
+---
+
+## Prompt #5
+- Timestamp: 2026-10-28 00:19:15 IST (approx., session metadata)
+- Phase: Phase 2 — Requirements & Design (brief, Part 1 of 3)
+- Text:
+
+Continue SDLC Phase 2 — Requirements and Design for the Personal Expense and Budget Tracker. Phase 1 has been approved, and you have already presented an initial Phase 2 design.
+
+This is Part 1 of 3. I will send two further messages containing additional documentation and testing requirements. Treat all three parts as one combined instruction. Do not finalize Phase 2 until you have received all three parts.
+
+### 1. Source of truth
+
+The assignment document at:
+
+`C:\Users\Druthi D\ExpenseandBudgetTracker\druthi 1.docx`
+
+remains the ultimate source of truth.
+
+Preserve all confirmed requirements and acceptance criteria. Do not invent requirements or silently resolve ambiguities.
+
+Clearly distinguish:
+- **Confirmed:** Explicitly required by the assignment or explicitly confirmed by me.
+- **Proposal:** Suggested design choice requiring approval where consequential.
+- **Decision needed:** Unresolved question requiring my decision.
+
+My Phase 1 decisions and proposals remain:
+
+- Q1: No deadline is set.
+- Q2: INR (₹) is proposed as the display currency, subject to confirmation.
+- Q3: Five most recent transactions overall are proposed for the dashboard.
+- Q4: Newest-first transaction ordering is proposed.
+- Q5: Propose secure JWT authentication and logout, explaining trade-offs.
+- Q6: Propose a reasonable password policy.
+- Q7: Start accounts with empty categories unless the assignment requires otherwise.
+- Q8: Automated tests for critical APIs and acceptance criteria are proposed.
+
+Do not treat proposals as approved.
+
+### 2. Review and correct the existing database design
+
+Review the initial ERD and schema rather than repeating them unchanged.
+
+Cover users, categories, transactions, and budgets. Specify columns, data types, primary and foreign keys, unique constraints, check constraints, delete behavior, and indexes.
+
+In particular:
+
+- Enforce at the database level that transactions and budgets can reference only categories belonging to the same user.
+- Enforce transaction/category type consistency.
+- Ensure budgets can reference expense categories only.
+- Prevent deletion of categories referenced by transactions or budgets.
+- Enforce one budget per user, category, month, and year.
+- Use decimal-safe monetary storage and arithmetic. Do not use binary floating-point types in the monetary calculation path.
+- Explain calendar-month aggregation, remaining budget, and overspending calculations.
+- Explain composite foreign keys and ownership constraints.
+- Identify any unresolved design issues.
+
+The design must protect against cross-user data access even if an API-level ownership check is accidentally missed.
+
+### 3. API contract and validation
+
+Review and propose the REST API contract for authentication, categories, transactions, budgets, and dashboard functionality.
+
+For each endpoint, specify:
+
+- Method and path.
+- Purpose and authentication requirements.
+- Request parameters and JSON body.
+- Response structure and success status.
+- Validation rules and error responses.
+- Per-user ownership enforcement.
+
+Include frontend, backend, and database validation. Explain transaction update validation, including category/type consistency, amount, and date.
+
+Propose a consistent error-response structure and HTTP status-code policy. Clearly label non-mandatory choices as proposals.
+
+### 4. Authentication and security
+
+Compare suitable options and recommend an approach for this assignment.
+
+Discuss password hashing and password policy, JWT signing algorithm and claims, expiry, secret management, logout semantics, server-side revocation, and authentication errors.
+
+Compare localStorage and HttpOnly-cookie token storage, explaining relevant XSS and CSRF trade-offs. State the recommended approach and its limitations.
+
+Leave consequential security choices awaiting my approval.
+
+### 5. Technology and version proposals
+
+Review the proposed React, Go, PostgreSQL, Node.js, database driver, migration tool, decimal library, JWT library, and testing technologies.
+
+Recommend a compatible, supportable set of versions. Explain important trade-offs and mark choices as proposals until approved. Do not install or configure anything.
+
+### 6. Requirements coverage
+
+Check the existing design against every functional requirement, acceptance criterion, mandatory technology requirement, and submission deliverable in the assignment.
+
+Identify gaps and ambiguities. Do not claim complete coverage unless the mapping supports that conclusion.
+
+### Boundary
+
+This is design-only. Do not create or modify files, write application code, implement tests, install dependencies or hooks, run migrations, commit, push, deploy, or start Phase 3.
+
+Wait for Parts 2 and 3 before producing the final consolidated Phase 2 design.
+
+---
+
+## Prompt #6
+- Timestamp: 2026-10-28 00:26:33 IST (approx., session metadata)
+- Phase: Phase 2 — Requirements & Design (brief, Part 2 of 3)
+- Text:
+
+This is Part 2 of 3 for SDLC Phase 2 — Requirements and Design. Combine it with Part 1 and the upcoming Part 3. Do not finalize the design until all three parts have been received.
+
+### 1. Root-level CLAUDE.md
+
+Plan a root-level `CLAUDE.md` containing:
+
+- Project purpose and scope.
+- Mandatory technology stack and architecture constraints.
+- Confirmed requirements and acceptance criteria.
+- Security, validation, decimal-safe monetary calculations, and per-user isolation.
+- SDLC phases, approval gates, and permitted actions.
+- Approved coding conventions and testing expectations.
+- Documentation and requirements traceability rules.
+- A rule that the assignment takes precedence over assumptions and unrelated project memory.
+- Current phase, completed milestones, approved decisions, open questions, and next permitted actions.
+
+Keep it concise and update it as phases progress. Do not silently change approved decisions.
+
+### 2. Root-level prompt.log
+
+Plan a root-level `prompt.log` to record prompts I provide to Claude Code for this project.
+
+Each entry should contain:
+
+- Sequential prompt number.
+- Local timestamp including timezone.
+- SDLC phase, when known.
+- Exact prompt text, preserving original wording.
+
+Rules:
+
+- Do not log Claude responses as user prompts.
+- Do not invent missing prompt text or timestamps.
+- Transparently identify earlier prompts that cannot be recovered exactly.
+- Redact passwords, tokens, and other secrets where necessary, explicitly marking redactions.
+- Do not claim all future prompts will be captured automatically unless a reliable mechanism has been verified.
+
+During Phase 2, investigate prompt-logging feasibility conceptually. Do not install tools, configure hooks, or change project settings. Explain the reliability limitations of automatic capture and recommend a practical manual or semi-automated alternative if necessary.
+
+### 3. README.md
+
+Plan a root-level `README.md` covering:
+
+- Project overview and features.
+- Prerequisites and supported versions.
+- Configuration and environment variables.
+- PostgreSQL setup and database initialization.
+- Migration and startup instructions.
+- Frontend and backend execution.
+- Testing instructions.
+- Security/configuration notes.
+- GitHub submission and repository instructions.
+
+Do not invent final commands or configuration values before implementation decisions are approved. Mark proposed content accordingly.
+
+### 4. Other documentation artifacts
+
+Propose a concise structure for `docs/` covering:
+
+- Database ERD/schema and migration documentation.
+- API contract and validation matrix.
+- Requirements traceability matrix.
+- Architecture and design-decision records.
+- Risk register and open questions.
+- Milestone and phase status tracking.
+- Test plan and test execution evidence.
+
+Explain the purpose, contents, traceability relationships, and lifecycle of every proposed artifact. Clarify which files belong at the project root and which belong in `docs/`.
+
+Avoid duplicate or unnecessary documents.
+
+### 5. Artifact lifecycle
+
+Explain when each artifact should be drafted, reviewed, approved, and updated across the SDLC phases.
+
+Preserve the approval gates. Phase 2 plans these artifacts but does not create or modify them.
+
+Do not create or modify any files, write application code, install dependencies or hooks, run migrations, commit, push, deploy, or start Phase 3. Wait for Part 3 before finalizing the consolidated design.
+
+---
+
+## Prompt #7
+- Timestamp: 2026-10-28 00:30:16 IST (approx., session metadata)
+- Phase: Phase 2 — Requirements & Design (brief, Part 3 of 3)
+- Text:
+
+This is Part 3 of 3 for SDLC Phase 2 — Requirements and Design. Combine this with Parts 1 and 2 and the initial Phase 2 design you already presented. Now produce one complete, consolidated Phase 2 design for review.
+
+### 1. Root-level user_stories.md
+
+Plan a root-level `user_stories.md` derived from the confirmed assignment requirements.
+
+Each story must contain:
+
+- Story ID.
+- User story in the format: "As a [user], I want [capability], so that [benefit]."
+- Acceptance criteria.
+- Related functional requirement and assignment acceptance criteria.
+- Dependencies.
+- Status.
+
+Cover authentication, category management, transactions, monthly budgets, and dashboard functionality.
+
+Separate confirmed requirements from proposed enhancements. Ensure stories are traceable to the assignment.
+
+### 2. Root-level test_cases.md
+
+Plan a root-level `test_cases.md` with two clearly separated stages.
+
+**Stage A — Automated test cases**
+
+Each planned case must have:
+
+- Test ID.
+- Related requirement, acceptance criterion, and user story.
+- Test level: unit, API/integration, database constraint, or frontend validation.
+- Preconditions.
+- Inputs and test data.
+- Test steps.
+- Expected result.
+- Execution status.
+- Fields for actual result and evidence to be completed only after execution.
+
+Plan tests for:
+
+- Authentication and password handling.
+- Per-user isolation and unauthorized access.
+- Category, transaction, and budget CRUD.
+- Frontend and backend validation.
+- Transaction/category type consistency.
+- Expense-only budgets and duplicate-budget prevention.
+- Decimal precision and monetary calculations.
+- Date ranges and calendar-month budget aggregation.
+- Negative remaining budgets and overspending indicators.
+- Category deletion restrictions.
+- Dashboard recalculation after changes.
+- API errors, success/error notifications, and PostgreSQL persistence.
+
+Map every test to the relevant requirements or user stories.
+
+**Stage B — Manual testing records**
+
+After implementation, support manual records containing:
+
+- Manual test ID and execution date/time.
+- Requirement or user story.
+- Preconditions and test data.
+- Actual steps performed.
+- Expected and actual results.
+- Pass, fail, or blocked status.
+- Evidence reference, such as a screenshot path where available.
+- Defect ID and retest result, where applicable.
+
+Keep planned tests distinct from executed tests. Never fabricate test results, dates, evidence, or defects. A test may be marked passed only when it has actually been executed and passed.
+
+### 3. Requirements traceability matrix
+
+Propose a matrix mapping every assignment requirement, acceptance criterion, mandatory technology requirement, and submission deliverable through:
+
+Assignment requirement → user story → design element → planned implementation component → test case.
+
+Identify gaps and ambiguities. Do not silently fill gaps or claim coverage without supporting mappings.
+
+### 4. Risk register, open questions, and milestones
+
+Provide:
+
+- Risk register with risk, impact, likelihood where meaningful, mitigation, and status.
+- Open questions and assumptions.
+- Milestone and phase status.
+- Recommended next steps, subject to approval gates.
+
+Include decisions raised in the initial Phase 2 design, including display currency, dashboard recent transactions, transaction ordering, registration fields, category naming and type changes, budget edit behavior, HTTP error semantics, authentication/logout, password policy, pagination, optional `/auth/me`, and technology/version choices.
+
+For every consequential decision, list the options, trade-offs, and recommended option where useful. Clearly distinguish confirmed requirements from proposals and decisions needing my approval.
+
+### 5. Consolidated Phase 2 review
+
+Bring Parts 1, 2, and 3 together into one complete Phase 2 design. Do not merely repeat the original response unchanged.
+
+Include:
+
+1. Requirements and acceptance-criteria coverage.
+2. Revised ERD/schema and database integrity design.
+3. API contract and validation matrix.
+4. Authentication/security design.
+5. Technology and version proposals.
+6. Proposed root-level and `docs/` structure with artifact purposes and lifecycle.
+7. User-story outlines.
+8. Automated and manual testing plans.
+9. Requirements traceability matrix.
+10. Risk register, open questions, milestone status, and consolidated approval decisions.
+
+Keep the design detailed enough for review, but avoid unnecessary documentation or duplicated content.
+
+### 6. Final phase gate
+
+Before concluding, explicitly state:
+
+- Which assignment requirements and acceptance criteria have been checked.
+- Any remaining coverage gaps or unresolved ambiguities.
+- Which decisions require my approval.
+- That no project files were created or modified and no implementation work began.
+- That work is paused pending my explicit approval of the completed Phase 2 design.
+
+Do not create or modify files, write application code, implement tests, install dependencies or hooks, run migrations, commit, push, deploy, or begin Phase 3.
+
+**Stop after presenting the consolidated Phase 2 design. Wait for my explicit approval before implementation.**
+
+---
+
+## Prompt #8
+- Timestamp: 2026-10-28 12:28:48 IST (approx., session metadata)
+- Phase: between Phase 2 drafting and verification (session ended with an API usage-limit error; NO response was produced)
+- Text:
+
+Before continuing, treat `C:\Users\Druthi D\ExpenseandBudgetTracker\druthi 1.docx` as the single authoritative source for the assignment's requirements.
+
+1. Open and read the actual document, not just its filename, a previous summary, or notes from our earlier conversation.
+2. Verify that the complete document has been read and identify its requirements, constraints, deliverables, and acceptance criteria.
+3. Use the document to validate the Phase 1 requirements and the pending Phase 2 design.
+4. If the document conflicts with previous conversation notes, proposed decisions, or your assumptions, the document takes precedence. Explicitly report the conflict rather than silently resolving it.
+5. Do not invent requirements or treat proposed design choices as assignment requirements unless the document supports them.
+6. If you cannot access or fully read the document, stop and tell me what is missing. Do not claim that verification is complete.
+
+First confirm that you successfully opened and read the document, then report the source-derived requirements and any discrepancies before proceeding with the Phase 2 review. Keep the work design-only and do not modify project files.
+
+---
+
+## Prompt #9
+- Timestamp: 2026-10-28 17:47:14 IST (approx., session metadata)
+- Phase: Phase 2 — document verification
+- Text:
+
+We are resuming my Personal Expense and Budget Tracker assignment.
+
+The single authoritative assignment document is:
+
+`C:\Users\Druthi D\ExpenseandBudgetTracker\druthi 1.docx`
+
+Before doing anything else, open and read the actual document completely. Do not rely only on the filename, earlier summaries, or previous conversation notes.
+
+1. Confirm whether you successfully accessed and read the entire document.
+2. Summarize its actual requirements, technology constraints, acceptance criteria, and submission deliverables.
+3. Identify any requirements that are unclear or ambiguous.
+4. Compare the document with the previously drafted Phase 1 requirements and pending Phase 2 design. The assignment document takes precedence over assumptions and proposed design decisions.
+5. If you cannot access or fully read the document, stop and tell me what is missing. Do not claim verification is complete.
+
+This is a read-and-review task only. Do not create or modify files, write implementation code, install dependencies or hooks, implement tests, run migrations, commit, push, deploy, or begin Phase 3.
+
+Wait for my next instruction after reporting your findings.
+
+---
+
+## Prompt #10
+- Timestamp: 2026-10-28 17:58:03 IST (approx., session metadata)
+- Phase: Phase 2 — corrected consolidated review (requested)
+- Text:
+
+Thank you for verifying and reading the complete authoritative assignment document:
+
+`C:\Users\Druthi D\ExpenseandBudgetTracker\druthi 1.docx`
+
+Your report confirms that no Phase 1 or Phase 2 artifacts were found in the project folder. We will restore the missing design context before proceeding.
+
+Use the following project history from our earlier discussion as context. Treat it as a previous draft to review, not as a substitute for the assignment document.
+
+### Previous SDLC status
+- Phase 1 — Planning: previously reviewed and approved in our conversation.
+- Phase 2 — Requirements and Design: a consolidated design was drafted but was never finally approved.
+- Phase 3 — Implementation: not approved and must not begin.
+
+### Previous design summary
+The proposed design included:
+- React functional components and hooks, Go REST APIs, PostgreSQL, JWT authentication, and hashed passwords.
+- `users`, `categories`, `transactions`, and `budgets` tables.
+- Composite database foreign keys to enforce ownership and category-type consistency.
+- Decimal-safe monetary arithmetic and JSON string serialization for money.
+- Authentication, category, transaction, budget, and dashboard APIs.
+- User stories, test cases, a requirements traceability matrix, a risk register, a decision register, and planned SDLC documentation.
+- Proposed choices such as INR display, newest-first transaction ordering, five most recent transactions overall, bcrypt password hashing, a stateless JWT logout strategy, and automated critical API tests. These are proposals unless confirmed by the assignment document.
+
+### Your task
+1. Compare the authoritative assignment document against the previous design summary above.
+2. Reconstruct the Phase 1 requirements and acceptance criteria from the assignment document, retaining the document's actual requirements.
+3. Review the previous Phase 2 design against those requirements. Identify missing requirements, contradictions, technical issues, and unresolved decisions.
+4. Explicitly address these design checks:
+   - Per-user data isolation at the API and database levels.
+   - Transaction category type must match transaction type.
+   - Budgets must use expense categories and enforce one budget per category/month/year.
+   - Categories referenced by transactions or budgets cannot be deleted.
+   - Calendar-month budget calculations and immediate dashboard updates after CRUD.
+   - Decimal-safe arithmetic and rejection of invalid monetary precision.
+   - Authentication and logout trade-offs.
+   - Automated backend tests and explicit manual frontend/end-to-end test cases.
+   - The PostgreSQL unique expression index for case-insensitive category-name uniqueness, if that policy is selected.
+5. Return a corrected consolidated Phase 2 design, a complete decision register with each decision marked approved or pending, and a requirements traceability matrix.
+6. Clearly distinguish requirements stated by the assignment from design proposals and assumptions.
+
+Do not claim to have recovered files that do not exist. Do not create or modify project files during this review.
+
+### Strict SDLC gate
+This remains design-only. Do not write implementation code, implement tests, install dependencies or hooks, create or run migrations, commit, push, deploy, or begin Phase 3.
+
+Keep Phase 2 unapproved. Present the consolidated design for my review and wait for my explicit approval.
+
+---
+
+## Prompt #11
+- Timestamp: 2026-10-28 18:14:31 IST (approx., session metadata)
+- Phase: Phase 2 — corrected consolidated review (resume after API connection error)
+- Text:
+
+Resume the Personal Expense and Budget Tracker assignment review.
+
+Authoritative assignment document:
+`C:\Users\Druthi D\ExpenseandBudgetTracker\druthi 1.docx`
+
+The assignment document has already been read and verified in your previous response. The last attempt ended with an API connection error before the consolidated Phase 2 review was delivered.
+
+Please continue from the last completed step.
+
+1. Check whether you have already produced the requested Phase 2 review. If so, return that result rather than repeating the work.
+2. If not, use the authoritative assignment document and the previous design summary supplied in my earlier prompt to complete the comparison.
+3. Provide the corrected consolidated Phase 2 design, complete pending/approved decision register, requirements traceability matrix, and unresolved issues.
+4. If the response is too long, deliver it in numbered parts and clearly state which parts remain. Do not claim the review is complete until all parts have been delivered.
+5. Do not spend time updating persistent memory. Focus on delivering the requested review.
+
+Strict restrictions: design-only. Do not create or modify project files, write implementation code, implement tests, install dependencies or hooks, create or run migrations, commit, push, deploy, or begin Phase 3.
+
+Phase 2 remains unapproved. Wait for my explicit approval before proceeding.
+
+---
+
+## Prompt #12
+- Timestamp: 2026-10-28 19:11:03 IST (approx., session metadata)
+- Phase: Phase 2 — verification (session ended with an API usage-limit error; NO response was produced)
+- Text:
+
+We are continuing my Personal Expense and Budget Tracker assignment.
+
+Project folder: `C:\Users\Druthi D\ExpenseandBudgetTracker`
+
+The authoritative assignment document is `druthi 1.docx` in this folder.
+
+We have completed Phase 1 Planning and drafted Phase 2 Requirements & Design. **Phase 2 has NOT been approved, and Phase 3 implementation is NOT authorized yet.**
+
+The Phase 2 design covers a React.js frontend, Go REST API backend, PostgreSQL, JWT authentication, hashed passwords, categories, transactions, monthly budgets, and a dashboard. The design also includes acceptance criteria AC1–AC16, proposed database constraints, API endpoints, and an RTM (Requirements Traceability Matrix).
+
+Your last task was to correct the Phase 2 review by:
+1. Completing the automated and manual test-case catalogues, including every test ID referenced in the RTM.
+2. Verifying that the RTM covers all functional requirements, AC1–AC16, technical constraints, and submission deliverables.
+3. Checking database enforcement of per-user isolation, transaction/category type matching, expense-only budgets, duplicate budgets, and category deletion restrictions.
+4. Confirming that amounts with more than two decimal places are rejected before insertion, with no silent rounding and no floating-point money arithmetic.
+5. Separating assignment requirements from proposed design choices and assumptions.
+6. Listing unresolved decisions without treating them as approved.
+
+First inspect the current project folder and your available conversation/memory context. Read `druthi 1.docx` if necessary. Do not overwrite or create project files yet. Do not start implementation. Tell me whether you can recover the previous Phase 2 review and what remains to finish before I approve Phase 2.
+
+---
+
+## Prompt #13
+- Timestamp: 2026-10-28 23:54:58 IST (approx., session metadata)
+- Phase: Phase 2 — finish verification (checkpoint report)
+- Text:
+
+We are continuing my Personal Expense and Budget Tracker assignment. You previously completed a consolidated Phase 2 Requirements & Design review. Claude Code has hit its usage limit several times, so I need you to continue from the existing checkpoint rather than redo completed work.
+
+**Project folder:** `C:\Users\Druthi D\ExpenseandBudgetTracker`
+**Assignment document:** `druthi 1.docx`
+
+## Current checkpoint
+- Phase 1 Planning: completed.
+- Phase 2 Requirements & Design: drafted, awaiting final approval.
+- Phase 3 Implementation: NOT approved and must NOT begin yet.
+- The existing Phase 2 review already covers the requirements, architecture, database design, API outline, AC1–AC16, proposed test strategy, and decision register.
+
+## Your next task: Finish Phase 2 verification
+
+1. Inspect the current project files and any available prior conversation or memory context. Reuse existing work. Read the assignment document only if needed to verify a requirement.
+2. Continue from the last review. Do not repeat the original planning, rewrite the whole design, or regenerate information already completed.
+3. Verify test coverage:
+   - Check every functional requirement and AC1–AC16 against the automated and manual test cases.
+   - Identify missing tests, duplicate or inconsistent test IDs, and any RTM references that do not have corresponding test cases.
+   - For each missing test, specify its ID, purpose, setup, input, expected HTTP status/result, and acceptance criterion covered.
+   - Clearly distinguish existing tests from proposed additions. Do not claim tests have been executed unless they actually have been.
+4. Verify the technical design covers:
+   - Per-user data isolation and cross-user foreign-key protection.
+   - Transaction/category type matching.
+   - Expense-only budgets and duplicate budget prevention.
+   - Preventing deletion of categories referenced by transactions or budgets.
+   - Positive amounts, valid dates, and rejection of amounts with more than two decimal places without silent rounding.
+   - Exact decimal money arithmetic and consistent JSON representation.
+   - Monthly budget calculations, dashboard updates after transaction mutations, filters, authentication, and logout behavior.
+5. Check for inconsistencies in the existing review, especially:
+   - Category-name uniqueness rules and their database index.
+   - Dashboard recent-transaction scope and transaction ordering.
+   - Logout/token-expiry strategy.
+   - Error responses and duplicate-budget behavior.
+   - Every test ID referenced in the RTM.
+6. Keep assignment requirements, design proposals, assumptions, and unresolved decisions clearly separated. Do not silently make decisions that require my approval.
+7. Produce a concise final checkpoint report containing:
+   A. Work already completed (briefly, without repeating the full design).
+   B. Missing or corrected test cases.
+   C. RTM coverage gaps, if any.
+   D. Remaining technical inconsistencies.
+   E. Decisions I still need to make.
+   F. Whether Phase 2 is ready for my approval, and exactly what remains if it is not.
+
+## Strict boundaries
+- This is a review-only task.
+- Do not implement features or write application code.
+- Do not create or modify project files.
+- Do not start Phase 3.
+- Do not ask me to repeat information already available.
+- If the original RTM or test catalogue cannot be found, say exactly which artefact is missing and continue verifying everything you can from the existing context. Do not reconstruct the entire previous review just because one artefact is unavailable.
+
+Stop after presenting the checkpoint report and wait for my response.
+
+---
+
+## Prompt #14
+- Timestamp: 2026-10-29 00:15:02 IST (approx., session metadata)
+- Phase: Phase 2 — finalize unified package
+- Text:
+
+Thank you. This recovery and verification report is our current checkpoint. Do not repeat the review.
+
+Let's finalize Phase 2 using your recommendations.
+
+1. Use the latest six-part Phase 2 review as the base.
+2. Merge the useful tests from the older v2 catalogue and the proposed TC-A15–TC-A30 and TC-M15–TC-M17 additions. Produce one collision-free test ID scheme and one consistent RTM. Preserve all requirements and AC1–AC16.
+3. For each unresolved decision, recommend one sensible default appropriate for a student project, prioritizing the assignment requirements, data integrity, security, simplicity, and ease of testing.
+4. Clearly separate mandatory assignment requirements from recommended implementation choices. Do not invent instructor requirements.
+5. Provide a concise decision table with the recommendation, reason, and whether my explicit approval is required. Flag any genuinely consequential choice rather than silently deciding it.
+6. Check that the unified design and tests cover all assignment requirements, including all three submission deliverables.
+7. Do not create or modify files, write code, execute tests, or start Phase 3 yet.
+
+Stop after presenting the final recommended decision table and the unified design/test-catalogue summary. Wait for my approval before changing any files or beginning implementation.
+
+---
+
+## Prompt #15
+- Timestamp: 2026-10-29 00:44:49 IST (approx., session metadata)
+- Phase: Phase 2 — v2.1 revisions (auth/cookie/money/status rulings)
+- Text:
+
+I am not confident enough in the technical details to choose the architecture decisions independently. Please act as my technical guide and recommend appropriate designs that satisfy my assignment, prioritize security and correctness, and remain manageable for a student project.
+
+Please revise the Phase 2 design with these recommendations:
+1. D9: JWT expiry of 60 minutes, with logout clearing the browser's authentication state. Explain the remaining token-revocation limitation.
+2. D10: Prefer an HttpOnly, Secure cookie for browser authentication, with an appropriate CSRF protection strategy and correct React/Go CORS and cookie configuration. Update all affected API contracts and tests. If this is unsuitable for the project constraints, explain why before choosing an alternative.
+3. D14: JSON money strings with exactly two decimal places; reject more than two decimal places. Use shopspring/decimal in Go and NUMERIC(12,2) in PostgreSQL.
+4. Resolve the inconsistency between D28 and tests A27/A28 regarding HTTP status codes. Make the status policy and tests agree.
+5. Review the remaining decisions for security, consistency, simplicity, and assignment compliance. Explain any important trade-offs in plain English.
+
+Please update the unified Phase 2 package, requirements traceability matrix, decision register, and test catalogue consistently. Clearly list unresolved decisions and any assumptions. Do not modify implementation files, create application code, or begin Phase 3. Show me the final revised design for approval first.
+
+---
+
+## Prompt #16
+- Timestamp: 2026-10-29 00:53:15 IST (approx., session metadata)
+- Phase: between Phase 2 review and documentation (read-only audit)
+- Text:
+
+You are correct that our goal is not to create an `SDLC.md` merely for the sake of having one. I need the actual SDLC deliverables and project-control files saved in my project.
+
+Project path:
+`C:\Users\Druthi D\ExpenseandBudgetTracker`
+
+Please perform a read-only audit first. Do not create, modify, delete, or overwrite files in this step.
+
+1. Recursively inspect the actual project directory and verify which files exist and contain meaningful content.
+2. Check specifically for `CLAUDE.md`, `prompt.log`, `README.md`, `user_stories.md`, `test_cases.md`, functional and non-functional requirements, acceptance criteria, project planning documents, architecture, database schema, API specification, decision register, test plan, requirements traceability matrix, phase approval log, and submission checklist.
+3. Search available Claude Code session history for previous work that exists only in conversations, and distinguish that from files saved on disk.
+4. Treat `druthi 1.docx` as the authoritative assignment source.
+5. Return a table showing each expected document, its exact path, whether it exists, whether its contents were verified, and whether it is complete, incomplete, or missing.
+6. Recommend a minimal, well-organized documentation structure. Avoid unnecessary duplicate documents; combine related material where appropriate.
+7. Identify which documents are required now for planning and design, which are needed before implementation, and which should be completed during testing and final submission.
+
+Do not create a new `SDLC.md` unless you find an explicit assignment or project requirement for it.
+
+After reporting the audit, wait for my approval before creating or changing documentation. Do not implement application code, run Phase 3, or claim that files exist without verifying them.
+
+---
+
+## Prompt #17
+- Timestamp: 2026-10-29 00:58:50 IST (approx., session metadata)
+- Phase: Documentation pack creation (authorized; NOT a Phase 2 approval)
+- Text:
+
+Thank you for the audit. I understand that only `druthi 1.docx` exists on disk and that the previous Phase 1 and Phase 2 work must be recovered from session history.
+
+I authorize you to create the planning and design documentation files for my review, but this is NOT approval of Phase 2 and NOT authorization to begin Phase 3.
+
+Please create the following using the latest consolidated Phase 2 v2.1 design and the recovered Phase 1 planning work:
+
+- `CLAUDE.md`
+- `prompt.log`
+- `README.md` as a draft
+- `user_stories.md`
+- `test_cases.md`
+- `docs/requirements.md`
+- `docs/design.md`
+- `docs/decisions.md`
+- `docs/traceability.md`
+
+You may create `docs/evidence/` for future test evidence if useful.
+
+Requirements:
+1. Preserve `druthi 1.docx` unchanged.
+2. Recover previous work from session history rather than starting over or inventing decisions.
+3. Keep all 16 acceptance criteria and maintain consistent user-story, design, test, and traceability IDs.
+4. Include all 35 automated and 17 manual test cases from Phase 2 v2.1, if the full catalogue is available in session history. Mark every test as Not Run.
+5. Record only genuine prompts, decisions, and actions in `prompt.log`; do not claim that implementation or tests occurred when they did not.
+6. In `CLAUDE.md`, document the project instructions and enforce the approval gates.
+7. Record the verified Phase 1 approval history accurately. Do not invent dates or approvals.
+8. Keep Phase 2 status as AWAITING MY REVIEW AND APPROVAL.
+9. Keep Phase 3 BLOCKED. Do not create application code, database migrations, or start implementation.
+10. Do not claim success until you verify each file exists and contains meaningful content.
+
+After creation, report the exact files created, verify their contents, identify anything that could not be recovered, and summarize the current phase statuses. I will review the saved documents before deciding whether to approve Phase 2.
+
+---
+
+## Prompt #18
+- Timestamp: 2026-10-29 ~01:20 IST (approx.; appended by Claude immediately after the session — see limitation note in header)
+- Phase: Phase 2 — final review and approval decision (delegated by user)
+- Text:
+
+We want to start implementation as soon as possible, but correctness comes first.
+
+Conduct the final Phase 2 review of the actual saved documents against `druthi 1.docx`. You have my authorization to make the genuine approval decision based on the evidence.
+
+Review the requirements, all 16 acceptance criteria, architecture, database schema and constraints, API contract, security, validation, money handling, user stories, test cases, and traceability.
+
+Apply these rules strictly:
+
+1. **Approve Phase 2 only if it genuinely meets the assignment requirements.** Do not approve merely to save time or because the documentation exists.
+2. Check for material omissions, contradictions, unsafe design choices, broken requirement-to-test mappings, and decisions that could prevent successful implementation or submission.
+3. Distinguish genuine blockers from minor improvements. Do not delay approval for cosmetic issues or reasonable, documented defaults.
+4. If genuine blockers exist, do not approve Phase 2. Fix straightforward documentation issues where appropriate, identify any decision requiring my input, and repeat the relevant checks.
+5. If the design is sound and no genuine blockers remain, record Phase 2 as APPROVED, documenting the evidence and rationale for that decision. Do not claim tests passed; all implementation tests must remain Not Run until executed.
+6. Keep Phase 3 blocked until I separately authorize implementation. Do not create application code or migrations as part of this review.
+7. Preserve `druthi 1.docx` unchanged and maintain accurate approval records.
+
+Return a concise report containing:
+- The checks performed and evidence supporting the decision.
+- Any blockers found and how they were resolved.
+- Any accepted non-blocking risks or defaults.
+- The final Phase 2 status: APPROVED or NOT APPROVED, based on the actual findings.
+- Whether Phase 3 remains blocked.
+
+Be decisive and efficient, but never manufacture approval or hide a material problem.
+
+---
+
+## Prompt #19
+- Timestamp: 2026-10-30 ~08:18 IST (resume session start; appended by Claude during that session — capture method noted in header)
+- Phase: Phase 3 — Implementation (resume after a 429 usage-limit interruption)
+- Note: Phase 3 implementation itself began in prior session(s) after Prompt #18 whose
+  authorization prompt could not be recovered verbatim — the backend and frontend code
+  found on disk on 2026-10-30 is that work. This entry records the first recoverable
+  prompt of the resume session.
+- Text:
+
+Resume implementation from the exact current project state. The previous session hit a 429 usage limit during changes to `backend/internal/config/config.go` and `backend/cmd/migrate/main.go`.
+
+First inspect the actual files and Git diff. Verify whether the changes are complete and correct, remove accidental duplicate comments or calls if present, and run the relevant Go formatting, build, and tests.
+
+Then inspect the remaining implementation and continue coding from the highest-priority unfinished feature. Do not restart planning, redo completed work, or provide only a status report. Preserve the approved design and existing files. Do not run destructive database commands or apply migrations without the required approval.
+
+Before stopping, ensure your changes are saved and give me a short continuation summary with the exact next task.
+
+---
+
+## Prompt #20
+- Timestamp: 2026-10-30 ~08:22 IST (approx.; appended by Claude during the session)
+- Phase: Phase 3 — Implementation (DB setup troubleshooting)
+- Text:
+
+Please check the existing background task bth5arg1w and report its current status. Do not start another copy of the setup script.
+
+---
+
+## Prompt #21
+- Timestamp: 2026-10-30 ~08:33 IST (approx.; appended by Claude during the session)
+- Phase: Phase 3 — Implementation (read-only DB verification)
+- Text:
+
+The PostgreSQL setup script completed successfully. It created `pebt_dev` and `pebt_test`.
+
+Before applying migrations or running tests, perform a **read-only verification**:
+
+1. Inspect `scripts/setup-db.ps1` and identify the exact application database role it creates or configures (`pebt_app` or `pebt`).
+2. Inspect `backend/.env` locally and confirm that `DATABASE_URL` and `TEST_DATABASE_URL` use that same role and point to `pebt_dev` and `pebt_test`, respectively. Do not display or log passwords or other secrets.
+3. Verify that the role has only the permissions required by the approved design. It must not have SUPERUSER, CREATEDB, or CREATEROLE privileges.
+4. Confirm that both databases are reachable using the configured application credentials.
+5. Compare the actual role name and configuration with the approved design in `docs/design.md`. Report any mismatch.
+
+**Important restrictions:**
+- Do not modify any files or database roles.
+- Do not reset passwords or change permissions.
+- Do not drop, recreate, or overwrite databases.
+- Do not apply migrations or run tests yet.
+- Do not expose credentials in terminal output or your response.
+
+Report the verification results clearly, including any mismatch and the exact next action needed. Stop and wait for my approval before making changes or proceeding.
+
+---
+
+## Prompt #22
+- Timestamp: 2026-10-30 ~08:40 IST (approx.; appended by Claude during the session)
+- Phase: Phase 3 — Implementation (JWT secret rotation after exposure)
+- Text:
+
+I approve rotating the exposed JWT_SECRET.
+
+Please:
+1. Generate a new cryptographically secure JWT secret locally.
+2. Update only the `JWT_SECRET` entry in the repository-root `.env` file.
+3. Do not print, echo, log, or display either the old or new secret.
+4. Do not change any database credentials, roles, permissions, or other environment variables.
+5. Verify that the new value is present without displaying it.
+6. Report completion without revealing the secret.
+
+Do not apply migrations or run tests yet. Stop after the rotation and wait for my approval.
+
+---
+
+## Prompt #23
+- Timestamp: 2026-10-30 ~08:45 IST (approx.; appended by Claude during the session)
+- Phase: Phase 3 — Implementation (migration + Stage A execution approved)
+- Text:
+
+I explicitly approve proceeding with the next implementation steps.
+
+**Step 1 — Apply the development migration**
+- From the `backend` directory, run `go run ./cmd/migrate up`.
+- Confirm that the migration is applied successfully to `pebt_dev`.
+- Do not drop, recreate, or reset `pebt_dev`.
+
+**Step 2 — Run the Stage A automated tests**
+- Run the automated test suite (`TC-A01–TC-A35`) against `pebt_test` only.
+- Confirm that `TEST_DATABASE_URL` points to `pebt_test` before running.
+- The test suite may reset its test schema, but must never modify `pebt_dev`.
+- Run the tests without skipping or silently excluding any cases.
+
+**Step 3 — Record observed results**
+- Update `test_cases.md` with the actual outcomes.
+- Mark each test as PASS, FAIL, or BLOCKED based on observed evidence.
+- Include useful failure details without exposing credentials or secrets.
+- Do not mark unexecuted tests as passed.
+
+**Restrictions**
+- Do not change the approved requirements or design.
+- Do not modify unrelated files.
+- Do not expose secrets or print `.env` contents.
+- Do not commit, push, or deploy.
+- If a migration or test fails, stop and report the exact error rather than attempting unrelated fixes.
+
+When finished, report the migration result, test summary (passed/failed/blocked), and files changed. Then stop and wait for my approval before proceeding to the next task.
+
+---
+
+## Prompt #24
+- Timestamp: 2026-10-30 ~09:20 IST (approx.; appended by Claude during the session)
+- Phase: Phase 3 — Implementation (approved root-cause fixes + Stage A re-run)
+- Text:
+
+I approve fixing the three identified root causes and rerunning the complete Stage A suite.
+
+Please proceed with these exact changes:
+
+1. **API fix:** Add appropriate lowercase JSON tags to `store.Category` and `store.Transaction` in `backend/internal/store`, consistent with the approved API response contract.
+2. **TC-A03 test fix:** Change the logout test helper to send POST to `/auth/logout`, matching the approved API design.
+3. **TC-A25 test fix:** Use one consistent email value for both registration and the subsequent database query.
+
+Then:
+
+4. Run `gofmt` on modified Go files.
+5. Run `go build ./...` and `go vet ./...`.
+6. Re-run all 35 Stage A automated tests against `pebt_test` only. Verify the test database target before execution.
+7. Update `test_cases.md` with the actual results from this clean run. Do not retain earlier PASS statuses where the test has not now passed correctly.
+8. Record the new test run log and append the required prompt history and status updates.
+
+Restrictions:
+- Do not modify approved requirements or design.
+- Do not change the database schema or migration files.
+- Do not modify `pebt_dev` beyond its existing migration.
+- Do not skip tests or hide failures.
+- Do not commit, push, or deploy.
+- If additional defects appear, report them rather than making unrelated changes.
+
+At the end, report the exact files changed, build/vet results, and all 35 test outcomes. Stop and wait for my approval.
+
+---
+
+## Prompt #25
+- Timestamp: 2026-10-30 ~10:00 IST (approx.; appended by Claude during the session)
+- Phase: Phase 3 — Implementation (approved defect fixes, SPA router fix, run 3)
+- Text:
+
+I approve the next set of narrowly scoped fixes and the following explicit decisions.
+
+**A. Fix the four Stage A issues**
+
+1. **A14 — filtered transaction GET queries**
+   - Inspect all six affected SQL placeholder constructions in `backend/internal/store/transactions.go`.
+   - Remove the erroneous literal `$` that produces `$$2`.
+   - Ensure PostgreSQL positional placeholders are constructed correctly.
+   - Preserve the existing filter behavior.
+
+2. **A06 — category deletion conflict**
+   - Update `mapDBError` to handle SQLSTATE `23001` for the category-in-use restriction.
+   - Return HTTP 409 with `CATEGORY_IN_USE`, consistent with the approved requirements.
+   - Preserve existing handling for other database errors.
+
+3. **A10 — category/transaction type conflict**
+   - My ruling: `TYPE_CONFLICT` is the canonical error code because design row 14 specifies it and the service already returns it.
+   - Update the test assertion to expect `TYPE_CONFLICT`.
+   - Add `TYPE_CONFLICT` to the documented error-envelope list in `docs/design.md`.
+   - Do not change the service response to `VALIDATION_ERROR`.
+
+4. **A23(d) — SQLSTATE documentation and test**
+   - Correct the test expectation from `23503` to `23001` for the observed RESTRICT deletion behavior.
+   - Correct the relevant documentation in `docs/design.md` to reflect `23001`.
+   - Do not change the database schema or replace RESTRICT behavior.
+
+**B. Fix the SPA server startup panic**
+
+5. Inspect the route registration in the server and static-file handling code.
+6. Resolve the Go ServeMux route conflict between the SPA root/fallback route and `/api/`.
+7. Preserve the approved same-origin production architecture:
+   - API routes remain under `/api/v1`.
+   - The SPA is served by the Go server.
+   - Unknown API routes must not fall through to the SPA's `index.html`.
+8. Check `STATIC_DIR` handling. An explicitly configured but nonexistent directory must produce a clear startup error rather than silently serving an invalid path.
+9. Verify that the default README server-start command no longer panics.
+
+**C. Verification**
+
+10. Run `gofmt`, `go build ./...`, and `go vet ./...`.
+11. Run all 35 Stage A automated tests against `pebt_test` only. Verify the database target before execution.
+12. Record actual results in `test_cases.md`. Do not retain old results as current results.
+13. Verify production server startup and exercise:
+    - SPA root route.
+    - A valid API route.
+    - An unknown API route.
+    - Static asset serving.
+    - Invalid `STATIC_DIR` behavior.
+14. Record evidence and append the required entries to `prompt.log` and `CLAUDE.md`.
+
+**Restrictions**
+- Do not change requirements beyond the two approved documentation clarifications above.
+- Do not modify migrations or the database schema.
+- Do not reset or modify `pebt_dev`.
+- Do not commit, push, or deploy.
+- Do not make unrelated refactors.
+- Do not expose secrets.
+- If a new failure appears, report it rather than silently changing unrelated behavior.
+
+At completion, report all files changed, build/vet results, all 35 test outcomes, and production-server verification results. Stop and wait for my approval before proceeding to the next SDLC task.
+
+---
+
+## Prompt #26
+- Timestamp: 2026-10-30 ~18:30 IST (approx.; appended by Claude during the session)
+- Phase: Phase 3 — final read-only acceptance audit (prompt.log-only write authorization)
+- Text:
+
+Use the assignment requirements I supplied as the final source of truth.
+
+Perform a final, read-only acceptance audit of the Personal Expense and Budget Tracker project.
+
+Inspect the actual source code, database migrations, README, automated tests, manual test records, documentation, and existing prompt.log.
+
+Audit every functional requirement, all 16 acceptance criteria, and the mandatory technology requirements:
+
+1. React.js functional components and hooks.
+2. Go REST APIs.
+3. PostgreSQL relationships, constraints, and migrations.
+4. JWT authentication and securely hashed passwords.
+5. Registration, category, transaction, budget, and dashboard features.
+6. User data isolation.
+7. Frontend and backend validation.
+8. Decimal monetary calculations.
+9. Date filtering and monthly aggregation.
+10. Duplicate budget prevention and overspending display.
+11. Persistent PostgreSQL storage.
+12. Clear success and error notifications.
+13. README installation and execution instructions.
+14. Source code and migration files suitable for GitHub submission.
+
+For every requirement, report one of:
+- PASS — implementation and verification evidence exist.
+- PARTIAL — implemented but not fully verified.
+- FAIL — missing or demonstrably incorrect.
+- NOT VERIFIED — insufficient evidence.
+
+For each result, identify the relevant source file, test case, migration, or evidence log.
+
+Also verify:
+- Whether all 35 automated tests pass.
+- Whether TC-M01 through TC-M16 have accurate execution records in test_cases.md.
+- Whether TC-M17 has been completed. Do not mark it PASS unless it was actually executed.
+- Whether any requirement has only partial coverage or has not been tested.
+
+Update prompt.log: (…documenting purpose/scope, requirements reviewed, checks performed,
+verified results, missing/partial/failed/unverified items, remaining work and submission
+blockers, next recommended action; preserve all existing entries; distinguish inspection
+from execution…)
+
+IMPORTANT: Do not modify application code. Do not install dependencies or run migrations.
+Do not delete or overwrite data. Do not create a GitHub repository, commit, push, or
+deploy. Do not expose credentials or the contents of .env. Do not modify unrelated files.
+You are authorized to update prompt.log and only prompt.log.
+
+### Audit record (recorded by Claude 2026-10-30 18:40 IST — inspection, not execution)
+
+**Scope:** read-only inspection of frontend/src (10 component files), backend internal
+packages (api, auth, service, store, config, httpx, dbmigrate), migrations/000001 up+down,
+README.md, test_cases.md, prompt.log, docs/ pack, .gitignore, .env presence (key names
+only — values never read into the record). No code was executed during this audit; test
+results below cite previously recorded runs, not new runs.
+
+**Checks performed (inspection):** migrations SQL reviewed line-by-line (composite FKs,
+CHECKs, UNIQUE indexes, NUMERIC(12,2), RESTRICT); auth package (bcrypt cost 12 constant,
+HS256 with method allow-list + issuer + expiry checks, 60-min TTL); cookie handling
+(HttpOnly, SameSite=Lax, Secure per config; logout clears with Max-Age=0); validation
+layer (email via net/mail, D8 password policy, category name/type, strict YYYY-MM-DD,
+description ≤500, year/month bounds); error envelope (httpx: pinned codes, strict
+size-limited JSON decode); dashboard service entry point; frontend hooks-only check (zero
+React class components; hooks present in all pages/components/contexts; Login/Register
+use shared validators); .gitignore covers .env, node_modules, dist, binaries.
+
+**Verified results (from recorded evidence):**
+- Automated: Stage A run 3, 2026-10-30 — **35/35 PASS, exit 0**
+  (docs/evidence/2026-10-30-stage-a-run3.log). Full three-run defect/fix history recorded.
+- Manual: **TC-M01–TC-M16 recorded PASS** in test_cases.md — records re-read from the file
+  during this audit and confirmed accurate against the conversation-reported observations
+  (verification performed earlier the same day).
+- TC-M17: **Not Run** — blocked on git-repository/GitHub decision; recorded as such.
+
+**Per-requirement results:**
+1. React functional components + hooks — **PASS** (frontend/src; no class components).
+2. Go REST APIs — **PASS** (internal/api, stdlib ServeMux, layered design).
+3. PostgreSQL relationships/constraints/migrations — **PASS** (migrations/000001_init.up.sql:
+   composite FKs with RESTRICT, expense-only budget FK via CHECK carrier column, UNIQUE
+   email/name/category+month, amount>0 CHECKs, NUMERIC(12,2), indexes; down migration
+   present; applied to pebt_dev, version 1 clean; TC-A23 proves constraints at DB level).
+4. JWT + hashed passwords — **PASS** (internal/auth/auth.go, internal/api/auth_handlers.go;
+   TC-A01/A03/A04/A25/A30/A35; TC-M01–M04).
+5. Five feature areas (FR1–FR5) — **PASS** (handlers + pages + full Stage A/B evidence).
+6. User data isolation (AC2) — **PASS** (user_id from JWT context only; scoped queries;
+   DB-level composite FKs; TC-A05/A17/A23/A33; TC-M14).
+7. Frontend + backend validation (AC3/AC14) — **PASS** (util/validate.js + per-form checks;
+   service/validation.go; TC-A07/A08/A27/A31; TC-M01/M07/M08/M16).
+8. Decimal money (AC13) — **PASS** (NUMERIC(12,2); shopspring/decimal; 2-dp string wire
+   format; TC-A07/A19/A22; TC-M07).
+9. Date filtering + monthly aggregation — **PASS** (store TxFilter, half-open month ranges;
+   TC-A12/A14/A21/A28/A34; TC-M09/M13).
+10. Duplicate budget prevention + overspend display (AC8/AC11) — **PASS** (DB UNIQUE → 409;
+    over_budget/negative remaining; TC-A11/A20/A23; TC-M11/M12).
+11. Persistent PostgreSQL storage (AC16) — **PASS** (TC-A24 restart test; data persisted
+    across the manual session; migration applied).
+12. Success/error notifications (AC15) — **PASS** (toast system; TC-M15 + error toasts in
+    M02/M03/M06/M11/M16).
+13. README install/execution instructions (DEL3) — **PARTIAL**: instructions finalized and
+    their backend/frontend commands verified live on the dev machine
+    (docs/evidence/2026-10-30-prod-server-verification.log), but the mandated fresh-clone
+    validation (TC-M17) has not run.
+14. Source suitable for GitHub submission (DEL1) — **PARTIAL/NOT VERIFIED**: code,
+    migrations and docs are complete and .gitignore correctly excludes secrets/build
+    artifacts, but no git repository exists — nothing committed or pushed; DEL1 absent.
+
+**Missing / partial / failed / unverified items:** no FAIL anywhere; the only PARTIAL
+items are 13 and 14 above, both blocked by the same missing prerequisite. No requirement
+lacks test coverage: every AC1–AC16 has at least one executed automated or manual case;
+AC3/AC15 were intentionally manual (documented) and were executed.
+
+**Remaining work / submission blockers (priority order):**
+1. User decision: create the git repository (init + commit; GitHub push for DEL1).
+2. Execute and record TC-M17 (fresh-clone README run) on that clone.
+3. Phase 3 completion decision by the user, then Phase 4 closure review and Phase 5
+   submission prep (pre-submission checklist + TC-M17 evidence).
+
+**Next recommended action:** the user decides on git repository creation (local commit
+and/or GitHub remote); nothing else blocks Phase 3's implementation and verification work.
+
+No application code, configuration, database data, or project file other than this
+prompt.log entry was modified by the audit.
